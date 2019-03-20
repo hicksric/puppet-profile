@@ -6,7 +6,7 @@ class profile::nginx(
 #    message => $vhosts;
 #  }
 #  $vhosts.each |$vhost| {
-    ::nginx::vhost { $facts['fqdn']:
+    ::nginx::vhost { $fact['fqdn']:
 #      port            => $vhost['port'],
 #      server_aliases  => $vhost['server_aliases']
     }
